@@ -23,6 +23,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname.replace("src", "") + '/node_modules/bootstrap/dist/'));
+app.use(express.static(__dirname.replace("src", "") + '/node_modules/bootstrap-datepicker/dist/'));
+app.use(express.static(__dirname.replace("src", "") + '/node_modules/jquery/dist/'));
 
 app.use('/', routes);
 app.use('/admin', admin);
