@@ -11,8 +11,8 @@ $( function() {
     endDate: "current"
   });
 
-  // L.mapbox.accessToken = '<your access token here>';
-  // var map = L.mapbox.map('map', 'mapbox.streets').setView([40, -74.50], 9);
+  L.mapbox.accessToken = '<your access token here>';
+  var map = L.mapbox.map('map', 'mapbox.streets').setView([40, -74.50], 9);
 
   $("#settings").on("click", () => {$("#overlay").show();});
   $(".settings_panel .close").on("click", () => {$("#overlay").hide();});
