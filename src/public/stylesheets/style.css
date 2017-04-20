@@ -274,7 +274,11 @@
     margin-left: 204px;
   }
 
-  #map {
+  .widget #datepicker1>div {
+    width: 215px;
+  }
+
+  .widget #map {
           height: 320px;
           width: 100%;
   }

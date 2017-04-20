@@ -5,12 +5,7 @@ $( function() {
   $( ".sortable" ).sortable();
   $( ".sortable" ).disableSelection();
 
-  $('#datepicker1').datepicker({
-    orientation: 'auto bottom',
-    autoclose : true,
-    todayHighlight : true,
-    endDate: "current"
-  });
+  $('#datepicker1').datepicker();
 
   mapboxgl.accessToken = 'pk.eyJ1IjoiYWNjYWlsIiwiYSI6ImNqMXE1ZDZvZzAwMGQycWtkN2o3a3psa2gifQ.wh7Wtg2qyBqeg5Wzv8qd7A';
     var map = new mapboxgl.Map({
