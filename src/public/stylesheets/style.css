@@ -73,7 +73,7 @@
     clear: both;
   }
 
-  .info_panel li .tooltips {
+  .info_panel li .tooltips:not(.blank) {
     text-decoration: underline;
     cursor: pointer;
   }
@@ -216,7 +216,7 @@
   }
 
   .icon_panel .selected {
-    background: #dbe1ff;
+    background: #9f9;
     border: 1px solid #dbe1ff;
     border-radius: 40px;
     padding: 3px;

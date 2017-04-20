@@ -1,5 +1,6 @@
 $( function() {
   // $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
 
   $( ".sortable" ).sortable();
   $( ".sortable" ).disableSelection();
@@ -32,7 +33,13 @@ function toggle_tooltips () {
   }
 
   $(".tooltips").each(function(){
-    $(this).attr("title", $(this).data(tooltip_number));
+    if($(this).data(tooltip_number) == "") {
+      $(this).addClass("blank");
+    } else {
+      $(this).removeClass("blank");
+    }
+
+    $(this).attr("data-content", $(this).data(tooltip_number));
   });
 }
 
