@@ -1,5 +1,5 @@
 $( function() {
-  $('[data-toggle="tooltip"]').tooltip();
+  // $('[data-toggle="tooltip"]').tooltip();
 
   $( ".sortable" ).sortable();
   $( ".sortable" ).disableSelection();
@@ -11,8 +11,11 @@ $( function() {
     endDate: "current"
   });
 
-  L.mapbox.accessToken = '<your access token here>';
-  var map = L.mapbox.map('map', 'mapbox.streets').setView([40, -74.50], 9);
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYWNjYWlsIiwiYSI6ImNqMXE1ZDZvZzAwMGQycWtkN2o3a3psa2gifQ.wh7Wtg2qyBqeg5Wzv8qd7A';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9'
+  });
 
   $("#settings").on("click", () => {$("#overlay").show();});
   $(".settings_panel .close").on("click", () => {$("#overlay").hide();});
