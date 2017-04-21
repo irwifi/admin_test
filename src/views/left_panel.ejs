@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html> -->
+<div class="col-lg-2 left_col">
+  <div class="row logo"><h3><%= title %></h3></div>
+  <div class="row user_view">
+    <div class="form-group">
+      <label for="user_view">User View</label>
+      <select class="form-control" id="user_view">
+        <option value="csr1">CSR1</option>
+        <option value="csr2">CSR2</option>
+        <option value="fins">FINS</option>
+        <option value="col1">COL1</option>
+        <option value="col2">COL2</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row info_panel">
+    <h3>Info</h3>
+
+    <ul class="list-unstyled sortable">
+      <li>First Name: <span class="tooltips blank" data-toggle="popover" data-trigger="hover" data-content="" data-tip1=""  data-tip2="ACCTABLE.FNAME">Tim</span></li>
+      <li>Last Name: <span class="tooltips blank" data-toggle="popover" data-trigger="hover" data-content="" data-tip1=""  data-tip2="ACCTABLE.LNAME">Abe</span></li>
+      <li>Credit Rank: <span>10</span></li>
+      <li>Budget Billing: <span class="tooltips" data-toggle="popover" data-trigger="hover" data-content="$34.69" data-tip1="$34.69"  data-tip2="BBTABLE.AMT">Yes</span></li>
+      <li>PAP: <span class="tooltips" data-toggle="popover" data-trigger="hover" data-content="$34.69" data-tip1="$34.69"  data-tip2="PAPTABLE.AMT">Yes</span></li>
+      <li>Paperless: <span class="tooltips" data-toggle="popover" data-trigger="hover" data-content="tim.abe@yahoo.com" data-tip1="tim.abe@yahoo.com"  data-tip2="ACCTABLE.EMAIL">Yes</span></li>
+      <li>Services: <span class="tooltips" data-toggle="popover" data-trigger="hover" data-content="MTR# 35467" data-tip1="MTR# 35467"  data-tip2="MTRTABLE.NUMBER"> WTR </span></li>
+      <li>Services: <span class="tooltips" data-toggle="popover" data-trigger="hover" data-content="MTR# 12645" data-tip1="MTR# 12645"  data-tip2="MTRTABLE.NUMBER"> PWR </span></li>
+      <li>Outage Notifications: <span>No</span></li>
+      <li>Account(s): <span class="tooltips blank" data-toggle="popover" data-trigger="hover" data-content="" data-tip1=""  data-tip2="ACCTABLE.ACCNUM">A1923T</span></li>
+      <li>Last Invoice: <span>PDF</span></li>
+      <li>Last Payment: <span>9/11/17</span></li>
+      <li>Bill Cycle: <span>7</span></li>
+      <li>Next Cycle: <span>9/18/17</span></li>
+    </ul>
+
+    <img src="/images/settings.png" alt="Settings" class="settings_spin" />
+  </div>
+
+  <div class="row checkbox xray">
+    <label><input type="checkbox" value="xray" id="xray">X-Ray View</label>
+  </div>
+
+  <%- include('info_config') -%>
+</div>

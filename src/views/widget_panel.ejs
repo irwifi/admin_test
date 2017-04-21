@@ -1,0 +1,9 @@
+<!-- <!DOCTYPE html> -->
+<div class="row widget_area ">
+  <ul class="list-unstyled list-inline sortable">
+    <% for(let widget in widgets) {%>
+      <%- include('widgets/widget_' + widgets[widget]); %>
+    <% } %>
+
+  </ul>
+</div>

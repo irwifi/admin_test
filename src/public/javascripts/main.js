@@ -1,5 +1,4 @@
 $( function() {
-  // $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
 
   $( ".sortable" ).sortable();
@@ -13,10 +12,14 @@ $( function() {
     style: 'mapbox://styles/mapbox/streets-v9'
   });
 
-  $("#settings").on("click", () => {$("#overlay").show();});
-  $(".settings_panel .close").on("click", () => {$("#overlay").hide();});
+  $("#settings").on("click", () => {$("#search_config_overlay").show();});
+  $(".settings_panel .close").on("click", () => {$("#search_config_overlay").hide();});
+  $(".info_panel .settings_spin").on("click", () => {$("#info_config_overlay").show();});
+  $(".info_config .close").on("click", () => {$("#info_config_overlay").hide();});
+
   $("#xray").on("click", toggle_tooltips);
   $("#search_box").on("input", search_input);
+  $(".widget .close").on("click", function() {$(this).closest("li").remove();});
 } );
 
 function toggle_tooltips () {
@@ -27,7 +30,7 @@ function toggle_tooltips () {
     tooltip_number = "tip1";
   }
 
-  $(".tooltips").each(function(){
+  $(".tooltips").each(function() {
     if($(this).data(tooltip_number) == "") {
       $(this).addClass("blank");
     } else {
