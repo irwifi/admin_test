@@ -299,6 +299,8 @@
     border-radius: 15px;
     width: 260px;
     margin: 20px;
+    height: 420px;
+    position: relative;
   }
 
   .widget .wheader {
@@ -311,6 +313,8 @@
   }
 
   .widget .wfooter {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 30px;
     padding: 5px;
@@ -323,8 +327,9 @@
 
   .widget .wbody {
     width: 100%;
-    height: 360px;
+    height: 80%;
     padding: 20px;
+    overflow: auto;
   }
 
   .widget .maximize {

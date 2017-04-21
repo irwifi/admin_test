@@ -3,6 +3,14 @@ $( function() {
 
   $( ".sortable" ).sortable();
   $( ".sortable" ).disableSelection();
+  $( ".sortable_widget" ).sortable({handle: ".widget .wheader"});
+  $( ".sortable_widget" ).disableSelection();
+  $( ".widget" ).resizable({
+      maxHeight: 600,
+      maxWidth: 1000,
+      minHeight: 200,
+      minWidth: 200
+    });
 
   $('#datepicker1').datepicker();
 
