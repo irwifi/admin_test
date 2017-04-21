@@ -96,11 +96,11 @@
     cursor: pointer;
   }
 
-  .info_panel li span {
+  .info_panel li .right {
     float: right;
   }
 
-  .info_panel li span:after {
+  .info_panel li .right:after {
     clear: both;
   }
 

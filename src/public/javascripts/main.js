@@ -20,6 +20,7 @@ $( function() {
   $("#xray").on("click", toggle_tooltips);
   $("#search_box").on("input", search_input);
   $(".widget .close").on("click", function() {$(this).closest("li").remove();});
+  $(".search_config .checkbox input").on("click", toggle_search);
 } );
 
 function toggle_tooltips () {
@@ -53,4 +54,8 @@ function search_input () {
   } else {
     $(".search_result").hide();
   }
+}
+
+function toggle_search () {
+  $(".search_result td[data-search='" + $(this).data("search") + "']").toggleClass("search_active");
 }

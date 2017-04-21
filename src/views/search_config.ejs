@@ -1,6 +1,6 @@
 <!-- <!DOCTYPE html> -->
 <div class="container overlay" id="search_config_overlay">
-  <div class="settings_panel">
+  <div class="settings_panel search_config">
     <div class="sheader">
       InstaSearch Config
       <img src="/images/close.png" alt="Close" class="close" />
@@ -12,13 +12,13 @@
 
         <div class="row checkbox">
           <ul class="list-unstyled">
-            <li><label><input type="checkbox" value="acc_no" checked="checked">Account Number</label></li>
-            <li><label><input type="checkbox" value="address" checked="checked">Address</label></li>
-            <li><label><input type="checkbox" value="Email" checked="checked">Email</label></li>
-            <li><label><input type="checkbox" value="invoice">Invoice Number</label></li>
-            <li><label><input type="checkbox" value="meter">Meter Number</label></li>
-            <li><label><input type="checkbox" value="name" checked="checked">Name</label></li>
-            <li><label><input type="checkbox" value="ssn">SSN</label></li>
+            <li><label><input type="checkbox" value="acc_no" checked="checked" data-search="account_number">Account Number</label></li>
+            <li><label><input type="checkbox" value="address" checked="checked" data-search="address">Address</label></li>
+            <li><label><input type="checkbox" value="Email" checked="checked" data-search="email">Email</label></li>
+            <li><label><input type="checkbox" value="invoice" data-search="invoice_number">Invoice Number</label></li>
+            <li><label><input type="checkbox" value="meter" data-search="meter_number">Meter Number</label></li>
+            <li><label><input type="checkbox" value="name" checked="checked" data-search="name">Name</label></li>
+            <li><label><input type="checkbox" value="ssn" data-search="ssn">SSN</label></li>
           </ul>
 
           <a href="#">Add Type</a>
