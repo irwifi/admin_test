@@ -4,6 +4,11 @@
     <% for(let widget in widgets) {%>
       <%- include('widgets/widget_' + widgets[widget]); %>
     <% } %>
-
   </ul>
+
+  <div class="add_widget">
+    <i class="add fa fa-plus-circle fa-4x" aria-hidden="false"></i>
+  </div>
+
+  <%- include('widget_add') -%>
 </div>

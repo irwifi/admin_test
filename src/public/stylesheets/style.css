@@ -1,4 +1,4 @@
-/* Root >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Root >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
   @keyframes spin {
     100% {
       transform: rotate3d(0, 0, 1, 360deg);
@@ -53,9 +53,9 @@
   .settings_spin:hover {
     animation: spin 0.7s linear infinite;
   }
-/* Root -------------------------------------------------------------------*/
+/* Root ----------------------------------------*/
 
-/* Left Panel >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Left Panel >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
   .logo {
     border-bottom: 2px solid;
     height: 60px;
@@ -120,9 +120,9 @@
     font-size: 16px;
     line-height: 22px;
   }
-/* Left Panel ---------------------------------------------------------------*/
+/* Left Panel ----------------------------------------*/
 
-/* Info Config >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Info Config >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
   .info_config {
     display: block;
     margin: 0 auto;
@@ -163,9 +163,9 @@
     display: block;
     text-align: center;
   }
-/* Info Config ------------------------------------------------------------*/
+/* Info Config ----------------------------------------*/
 
-/* Search Panel >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Search Panel >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
   .search_panel {
     border-right: 2px solid;
     height: 60px;
@@ -203,9 +203,9 @@
   .search_result td img {
     max-height: 30px;
   }
-/* Search Panel -------------------------------------------------------------*/
+/* Search Panel ----------------------------------------*/
 
-/* Search Config >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Search Config >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
   .settings_panel {
     display: block;
     margin: 0 auto;
@@ -251,9 +251,9 @@
     text-align: center;
     margin-top: 20px;
   }
-/* Search Config ------------------------------------------------------------*/
+/* Search Config ----------------------------------------*/
 
-/* Tool Bar >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Tool Bar >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
   .icon_panel {
     margin-top: 2px;
   }
@@ -285,9 +285,9 @@
     max-width: 30px;
     display: block;
   }
-/* Tool Bar -------------------------------------------------------------------*/
+/* Tool Bar ----------------------------------------*/
 
-/* Widget >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Widget >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
   .widget_area {
     padding: 30px;
   }
@@ -344,9 +344,67 @@
           height: 320px;
           width: 100%;
   }
-/* Widget -------------------------------------------------------------------*/
 
-/* Right Panel >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+  .widget_area .add_widget {
+    display: block;
+    background: url(../images/add_widget.png) center center no-repeat;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .widget_area .add {
+    display: block;
+    text-align: center;
+    line-height: 183px;
+    color: #AAA;
+    cursor: pointer;
+  }
+
+  .widget_area .add:hover {
+   color: #555;
+  }
+/* Widget ----------------------------------------*/
+
+/* Widget Add Config >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+  .add_widget_panel {
+    display: block;
+    margin: 0 auto;
+    height: 160px;
+    width: 360px;
+    border-radius: 12px;
+    border: 1px solid #DDD;
+    background: #EEE;
+    margin-top: 200px;
+  }
+
+  .add_widget_panel .header {
+    height:30px;
+    padding: 5px;
+    font-weight: bold;
+    background: #09f;
+    color: white;
+    margin: 3px;
+    border-radius: 10px;
+    margin-bottom: 20px
+  }
+
+  .add_widget_panel .body {
+    margin: 0 auto;
+  }
+
+  .add_widget_panel h5 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .add_widget_panel li {
+    margin-left: 140px;
+    line-height: 19px;
+  }
+/* Widget Add Config ----------------------------------------*/
+
+/* Right Panel >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
   .history {;
     text-align: center;
     height: 60px;
@@ -382,4 +440,4 @@
     max-height: 60px;
     display: block;
   }
-/* Right Panel ----------------------------------------------------------------*/
+/* Right Panel ----------------------------------------*/
